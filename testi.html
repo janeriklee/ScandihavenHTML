@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Testi</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .container {
+            padding: 10px 50px;
+            position: relative;
+            width: 45%;
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+            z-index: 10;
+        }
+        @keyframes movedown {
+            0%{
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+                .container:nth-child(1){
+            animation-delay: 0s;
+        }
+        .container:nth-child(2){
+            animation-delay: 1s;
+        }
+        .container:nth-child(3){
+            animation-delay: 2s;
+        }
+
+        .text-box{
+            padding: 20px 30px;
+            background: #574845;
+            color: #fff;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .left-container {
+            left: 0;
+        }
+
+        .right-container {
+            left: 50%;
+        }
+
+        .container img {
+            position: absolute;
+            width: 40px;
+            border-radius: 50%;
+            right: 0px;
+            top: 32px;
+        }
+
+        .right-container img {
+            left: 0px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: #574845;
+            top: 0;
+            left: 51.7%;
+            margin-left: -3px;
+            z-index: 1;
+            animation: moveline 3s linear forwards;
+        }
+        @keyframes moveline {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="timeline">
+        <div class="container left-container">
+            <img src="kuvat/yksi.png">
+            <div class="text-box">
+                <h2>Nopea hintatarjous sekä irroitus</h2>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="kuvat/kaksi.png">
+            <div class="text-box">
+                <h2>Ammattilainen maalaa ja tarpeen tullen luo uudet kaapinovet</h2>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="kuvat/kolme.png">
+            <div class="text-box">
+                <h2>Tuodaan sekä kiinnitetään takaisin paikoilleen</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
