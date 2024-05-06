@@ -375,8 +375,11 @@ main {
 }
 .left-container img, .right-container img {
   left: 10px;
-};
-.reviews h1 {
-  text-align: center;
+}
+.reviews {
+  font-size: 15px; /* adjust font size on mobile */
+}
+.contact {
+  font-size: 15px;
 }
 }
