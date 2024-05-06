@@ -376,4 +376,7 @@ main {
 .left-container img, .right-container img {
   left: 10px;
 };
+.reviews h1 {
+  text-align: center;
+}
 }
