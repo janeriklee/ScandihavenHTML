@@ -268,17 +268,19 @@ main {
 .review-container {
   background: #574845;
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 10px;
   display: flex; /* add this */
   justify-content: space-between; /* add this */
 }
 
 .review-card {
-  width: 48%; /* adjust this */
+  width: 50%; /* adjust this */
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 18px;
+  margin: 20px;
   overflow: hidden;
 }
 
@@ -378,6 +380,10 @@ main {
 }
 .reviews {
   font-size: 15px; /* adjust font size on mobile */
+}
+.review-container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .contact {
   font-size: 15px;
